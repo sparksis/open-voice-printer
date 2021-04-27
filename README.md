@@ -12,7 +12,7 @@ Voice jobs may include the following:
 
 ### Hardware
 
-The only component other than a [CUPS](https://www.cups.org/) device should be a RaspberryPi or other low powered print server.
+The only component other than a [CUPS](https://www.cups.org/) compatible device should be a RaspberryPi or other low powered print server.
 
 ### Software
 
