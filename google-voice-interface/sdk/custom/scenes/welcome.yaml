@@ -11,7 +11,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-handlers:
-- name: start_scene_initial_prompt
-inlineCloudFunction:
-  executeFunction: ActionsOnGoogleFulfillment
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: 'What would you like to do?'
+        suggestions:
+          - title: 'Print a label'
+          - title: 'Print three labels'
+intentEvents:
+- intent: actions.intent.CANCEL
+  transitionToScene: actions.scene.END_CONVERSATION
+- intent: printLabel
+  handler:
+    webhookHandler: printLabel
