@@ -1,0 +1,5 @@
+synonym:
+  # matchType: FUZZY_MATCH
+  acceptUnknownValues: false
+  entities:
+    label:

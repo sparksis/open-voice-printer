@@ -1,7 +1,9 @@
 parameters:
-  - name: numberOfPages
+  - name: numberOfDocuments
     type:
       name: actions.type.Number
+  - name: documentName
+    type:
+      name: DocumentName
 trainingPhrases:
-  - Print...
-  - Print ($numberOfPages '1' auto=true) labels
+  - Print ($numberOfDocuments '1' auto=true) ($documentName 'label' auto=true)
