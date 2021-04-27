@@ -20,5 +20,4 @@ onEnter:
     - promptResponse:
         firstSimple:
           variants:
-          - speech: ' and hello world from the console!'
-  webhookHandler: start_scene_initial_prompt
+          - speech: 'What you like your label to print?'
