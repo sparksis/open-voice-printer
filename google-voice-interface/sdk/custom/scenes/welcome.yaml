@@ -11,13 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-conditionalEvents:
-- condition: "True"
-  transitionToScene: actions.scene.END_CONVERSATION
 onEnter:
   staticPrompt:
     candidates:
     - promptResponse:
         firstSimple:
           variants:
-          - speech: 'What you like your label to print?'
+          - speech: 'What would you like to do?'
+intentEvents:
+- intent: actions.intent.CANCEL
+  transitionToScene: actions.scene.END_CONVERSATION
+- intent: printLabel
+  handler:
+    webhookHandler: printLabel
