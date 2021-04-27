@@ -11,16 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-category: GAMES_AND_TRIVIA
+category: PRODUCTIVITY
 defaultLocale: en
 localizedSettings:
   developerEmail:
   developerName:
-  displayName: Hello world sample
+  displayName: Open Voice Printer
   fullDescription:
   privacyPolicyUrl:
-  pronunciation: Hello world sample
+  pronunciation: Open Voice Printer
   shortDescription:
   smallLogoImage:
   termsOfServiceUrl:
-projectId: <PROJECT_ID>
+projectId: voice-printer
