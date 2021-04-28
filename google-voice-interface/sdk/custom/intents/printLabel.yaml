@@ -1,9 +1,9 @@
 parameters:
-  - name: numberOfDocuments
-    type:
-      name: actions.type.Number
-  - name: documentName
-    type:
-      name: DocumentName
+- name: numberOfDocuments
+  type:
+    name: actions.type.Number
+- name: documentName
+  type:
+    name: DocumentName
 trainingPhrases:
-  - Print ($numberOfDocuments '1' auto=true) ($documentName 'label' auto=true)
+- Print ($numberOfDocuments '1' auto=true) ($documentName 'label' auto=true)
