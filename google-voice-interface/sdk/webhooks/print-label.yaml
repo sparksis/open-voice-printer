@@ -1,5 +1,4 @@
 handlers:
   name: printLabel
 httpsEndpoint:
-  # https://hookb.in/xYL9K3kLJ7t7zzYJe6bz
-  baseUrl: https://damp-lake-2438.getsandbox.com/action
+  baseUrl: https://open-voice-printer.getsandbox.com/action
