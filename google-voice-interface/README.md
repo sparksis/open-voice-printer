@@ -1,36 +1,3 @@
-# Actions on Google: Hello World Sample
+# Open Voice Printer for Google Assistant
 
-### Prerequisites
-1. Node.js and NPM
-    + We recommend installing using [nvm for Linux/Mac](https://github.com/creationix/nvm) and [nvm-windows for Windows](https://github.com/coreybutler/nvm-windows)
-1. Install the [Firebase CLI](https://developers.google.com/assistant/actions/dialogflow/deploy-fulfillment)
-    + We recommend using MAJOR version `8` , `npm install -g firebase-tools@^8.0.0`
-    + Run `firebase login` with your Google account
-
-### Setup
-#### Actions Console
-1. From the [Actions on Google Console](https://console.actions.google.com/), **New project** > **Create project** > under **What kind of Action do you want to build?** > **Custom** > **Blank project**
-
-#### Actions CLI
-1. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions)
-1. Navigate to `sdk/settings/settings.yaml`, and replace `<PROJECT_ID>` with your project ID
-1. Navigate to the `sdk/` directory by running `cd sdk` from the root directory of this project.
-1. Run `gactions login` to login to your account.
-1. Run `gactions push` to push your project.
-1. Run `gactions deploy preview` to deploy your project.
-
-### Running this Sample
-+ You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project. Just say or type, “OK Google, talk to my test app”.
-+ You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
-
-## References & Issues
-+ Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google) or the [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/).
-+ For bugs, please report an issue on Github.
-+ Actions on Google [Documentation](https://developers.google.com/assistant)
-+ Actions on Google [Codelabs](https://codelabs.developers.google.com/?cat=Assistant)
-
-## Contributing
-Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## License
-See [LICENSE](LICENSE).
+[![](https://mermaid.ink/img/eyJjb2RlIjoic3RhdGVEaWFncmFtLXYyXG4gICAgWypdIC0tPiB3ZWxjb21lOiBhY3Rpb25zLmludGVudC5NQUlOXG4gICAgd2VsY29tZSAtLT4gYWN0aW9ucy5zY2VuZS5FTkRfQ09OVkVSU0FUSU9OOiBhY3Rpb25zLmludGVudC5DQU5DRUxcbiAgICB3ZWxjb21lIC0tPiBsYWJlbFNlbGVjdGlvbjogcHJpbnRMYWJlbFxuICAgICAgICBub3RlIGxlZnQgb2YgbGFiZWxTZWxlY3Rpb25cbiAgICAgICAgICAgIENhcHR1cmVzOlxuICAgICAgICAgICAgKiBudW1iZXJPZkRvY3VtZW50cyBcbiAgICAgICAgICAgICogZG9jdW1lbnROYW1lXG4gICAgICAgIGVuZCBub3RlXG4gICAgICAgIGxhYmVsU2VsZWN0aW9uIC0tPiBkYXRlU2VsZWN0aW9uOiBleHBpcmF0aW9uIGxhYmVsXG4gICAgICAgICAgICBkYXRlU2VsZWN0aW9uIC0tPiBleGVjdXRlOiB7ZGF0ZSBzcG9rZW59XG4gICAgICAgICAgICBleGVjdXRlIC0tPiBbKl1cbiAgICAgICAgbGFiZWxTZWxlY3Rpb24gLS0-IHRleHRTZWxlY3Rpb246IGJveCBsYWJlbFxuICAgICAgICAgICAgdGV4dFNlbGVjdGlvbiAtLT4gY29uZmlybToge2ZyZWUgdGV4dCBzcG9rZW59XG4gICAgICAgICAgICBjb25maXJtIC0tPiBleGVjdXRlOiB5ZXNcbiAgICAgICAgICAgIGNvbmZpcm0gLS0-IHRleHRTZWxlY3Rpb246IG5vXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoic3RhdGVEaWFncmFtLXYyXG4gICAgWypdIC0tPiB3ZWxjb21lOiBhY3Rpb25zLmludGVudC5NQUlOXG4gICAgd2VsY29tZSAtLT4gYWN0aW9ucy5zY2VuZS5FTkRfQ09OVkVSU0FUSU9OOiBhY3Rpb25zLmludGVudC5DQU5DRUxcbiAgICB3ZWxjb21lIC0tPiBsYWJlbFNlbGVjdGlvbjogcHJpbnRMYWJlbFxuICAgICAgICBub3RlIGxlZnQgb2YgbGFiZWxTZWxlY3Rpb25cbiAgICAgICAgICAgIENhcHR1cmVzOlxuICAgICAgICAgICAgKiBudW1iZXJPZkRvY3VtZW50cyBcbiAgICAgICAgICAgICogZG9jdW1lbnROYW1lXG4gICAgICAgIGVuZCBub3RlXG4gICAgICAgIGxhYmVsU2VsZWN0aW9uIC0tPiBkYXRlU2VsZWN0aW9uOiBleHBpcmF0aW9uIGxhYmVsXG4gICAgICAgICAgICBkYXRlU2VsZWN0aW9uIC0tPiBleGVjdXRlOiB7ZGF0ZSBzcG9rZW59XG4gICAgICAgICAgICBleGVjdXRlIC0tPiBbKl1cbiAgICAgICAgbGFiZWxTZWxlY3Rpb24gLS0-IHRleHRTZWxlY3Rpb246IGJveCBsYWJlbFxuICAgICAgICAgICAgdGV4dFNlbGVjdGlvbiAtLT4gY29uZmlybToge2ZyZWUgdGV4dCBzcG9rZW59XG4gICAgICAgICAgICBjb25maXJtIC0tPiBleGVjdXRlOiB5ZXNcbiAgICAgICAgICAgIGNvbmZpcm0gLS0-IHRleHRTZWxlY3Rpb246IG5vXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
