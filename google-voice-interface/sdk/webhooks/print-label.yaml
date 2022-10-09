@@ -1,0 +1,4 @@
+handlers:
+- name: printLabel
+httpsEndpoint:
+  baseUrl: https://open-voice-printer.getsandbox.com/action

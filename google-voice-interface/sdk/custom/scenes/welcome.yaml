@@ -1,0 +1,16 @@
+intentEvents:
+- intent: actions.intent.CANCEL
+  transitionToScene: actions.scene.END_CONVERSATION
+- handler:
+    webhookHandler: printLabel
+  intent: printLabel
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        firstSimple:
+          variants:
+          - speech: What would you like to do?
+        suggestions:
+        - title: Print a label
+        - title: Print three labels

@@ -1,0 +1,6 @@
+synonym:
+  entities:
+    label:
+      synonyms:
+      - label
+      - labels
