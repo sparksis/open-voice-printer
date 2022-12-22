@@ -1,4 +1,8 @@
-# Voice Assistant Printer
+# ~Voice Assistant Printer~
+
+# Archived
+
+[Killed by Google](https://developers.google.com/assistant/ca-sunset)
 
 ## Goals
 
